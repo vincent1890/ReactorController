@@ -1,5 +1,5 @@
 # ComputerCraft Automated Reactor Controller
-# Tutoriel (copier-coller dans un README) — Big Reactors + ComputerCraft (1.7.10)
+# Tutoriel — Big Reactors + ComputerCraft (1.7.10)
 ## Patch Pastebin ➜ Installer le script (FurRg6Ec) ➜ Lancer automatiquement au démarrage
 
 
