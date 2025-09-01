@@ -1,4 +1,7 @@
 # ComputerCraft Automated Reactor Controller
+# Tutoriel (copier-coller dans un README) — Big Reactors + ComputerCraft (1.7.10)
+# Patch Pastebin ➜ Installer le script (FurRg6Ec) ➜ Lancer automatiquement au démarrage
+
 
 Easily automate your Bigger/Extreme reactor with a pretty graphical UI. <br />
 
@@ -9,11 +12,6 @@ Easily automate your Bigger/Extreme reactor with a pretty graphical UI. <br />
   <li>Automatically control your reactor with optional configuration</li>
   <li>Tested on Extreme and Bigger Reactors</li>
   </bl>
-
-
-
-# Tutoriel (copier-coller dans un README) — Big Reactors + ComputerCraft (1.7.10)
-# Patch Pastebin ➜ Installer le script (FurRg6Ec) ➜ Lancer automatiquement au démarrage
 
 ## 1) Corriger le programme `pastebin` (URL HTTPS correcte)
 # Dans l’ordinateur ComputerCraft, tape d’abord :
