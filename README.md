@@ -10,10 +10,47 @@ Easily automate your Bigger/Extreme reactor with a pretty graphical UI. <br />
   <li>Tested on Extreme and Bigger Reactors</li>
   </bl>
 
-## Turbine support??
-Probably not. Turbine support seriously ups the complexity of both the program and the setup needed to use the program. <br />
-Check out this script if you want a nice program with turbine support. <br />
-https://gitlab.com/seekerscomputercraft/extremereactorcontrol/
+
+
+# Tutoriel (copier-coller dans un README) — Big Reactors + ComputerCraft (1.7.10)
+# Patch Pastebin ➜ Installer le script (FurRg6Ec) ➜ Lancer automatiquement au démarrage
+
+## 1) Corriger le programme `pastebin` (URL HTTPS correcte)
+# Dans l’ordinateur ComputerCraft, tape d’abord :
+copy rom/programs/http/pastebin pastebin
+edit pastebin
+# Quand l’éditeur s’ouvre, remplace le contenu 
+"http://pastebin.com/raw.php?i"..textutils.urlEncode( paste )
+
+# par ce qui suit, puis Ctrl+S et Ctrl+E pour sauvegarder/quitter :
+"https://pastebin.com/raw/"..textutils.urlEncode( paste )
+
+## 2) Installer le script cible (ex. code Pastebin : FurRg6Ec)
+# Méthode recommandée : le télécharger localement sous le nom `rc`, puis l’exécuter
+pastebin get FurRg6Ec rc
+rc
+
+## 3) Démarrage automatique à chaque boot (startup)
+# Crée le fichier `startup` qui lance `rc` automatiquement :
+edit startup
+# Colle la ligne suivante, puis Ctrl+S / Ctrl+E :
+shell.run("rc")
+
+## 4) (Option) Variante “toujours depuis Pastebin” au démarrage (moins fiable hors-ligne)
+# À mettre à la place de la ligne précédente dans `startup` si tu préfères :
+shell.run("pastebin run FurRg6Ec")
+
+## 5) Raccourcis utiles
+# Arrêter un script en boucle :  Ctrl + T
+# Redémarrer l’ordinateur :     Ctrl + R
+
+## 6) Vérification rapide que le réacteur est bien vu
+lua
+print( peripheral.find("BigReactors-Reactor") and "OK: réacteur détecté" or "KO: aucun réacteur" )
+
+
+
+
 
 ## Installation
   <ol>
@@ -28,9 +65,12 @@ https://gitlab.com/seekerscomputercraft/extremereactorcontrol/
     </li>
     <li>
       Run the following command in the Computer: <br />
-      <code>pastebin run kSkwEchg</code>
+      <code>pastebin run FurRg6Ec</code>
     </li>
   </ol>
+
+
+
 
 ## Configuration
   To configure the program, use monitors. Once it is configured,
