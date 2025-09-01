@@ -693,7 +693,7 @@ local function updateStats()
         fuelTemp = reactor.getFuelTemperature()
         caseTemp = reactor.getCasingTemperature()
         -- Big Reactors doesn't give us a way to directly query RF capacity through CC APIs
-        capacity = math.max(capacity, reactor.getEnergyStored)
+		capacity = math.max(capacity, reactor.getEnergyStored())
     elseif (reactorVersion == "Extreme Reactors") then
         local bat = reactor.getEnergyStats()
         local fuel = reactor.getFuelStats()
