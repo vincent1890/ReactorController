@@ -15,36 +15,37 @@ Easily automate your Bigger/Extreme reactor with a pretty graphical UI. <br />
 
 ### 1) Corriger le programme `pastebin` (URL HTTPS correcte)
 #### Dans l’ordinateur ComputerCraft, tape d’abord :
-copy rom/programs/http/pastebin pastebin
-edit pastebin
+<code>copy rom/programs/http/pastebin pastebin</code>
+<code>edit pastebin</code>
+
 #### Quand l’éditeur s’ouvre, remplace le contenu 
-"http://pastebin.com/raw.php?i"..textutils.urlEncode( paste )
+<code>"http://pastebin.com/raw.php?i"..textutils.urlEncode( paste )</code>
 
 #### par ce qui suit, puis Ctrl+S et Ctrl+E pour sauvegarder/quitter :
-"https://pastebin.com/raw/"..textutils.urlEncode( paste )
+<code>"https://pastebin.com/raw/"..textutils.urlEncode(paste)</code>
 
 ### 2) Installer le script cible (ex. code Pastebin : FurRg6Ec)
 #### Méthode recommandée : le télécharger localement sous le nom `rc`, puis l’exécuter
-pastebin get FurRg6Ec rc
-rc
+<code>pastebin get FurRg6Ec rc</code>
+<code>rc</code>
 
 ### 3) Démarrage automatique à chaque boot (startup)
 #### Crée le fichier `startup` qui lance `rc` automatiquement :
-edit startup
+<code>edit startup</code>
 #### Colle la ligne suivante, puis Ctrl+S / Ctrl+E :
-shell.run("rc")
+<code>shell.run("rc")</code>
 
 ### 4) (Option) Variante “toujours depuis Pastebin” au démarrage (moins fiable hors-ligne)
 #### À mettre à la place de la ligne précédente dans `startup` si tu préfères :
-shell.run("pastebin run FurRg6Ec")
+<code>shell.run("pastebin run FurRg6Ec")</code>
 
 ### 5) Raccourcis utiles
 #### Arrêter un script en boucle :  Ctrl + T
 #### Redémarrer l’ordinateur :     Ctrl + R
 
 ### 6) Vérification rapide que le réacteur est bien vu
-lua
-print( peripheral.find("BigReactors-Reactor") and "OK: réacteur détecté" or "KO: aucun réacteur" )
+<code>lua</code>
+<code>print( peripheral.find("BigReactors-Reactor") and "OK: réacteur détecté" or "KO: aucun réacteur" )</code>
 
 
 
