@@ -16,6 +16,7 @@ Easily automate your Bigger/Extreme reactor with a pretty graphical UI. <br />
 ### 1) Corriger le programme `pastebin` (URL HTTPS correcte)
 #### Dans l’ordinateur ComputerCraft, tape d’abord :
 <code>copy rom/programs/http/pastebin pastebin</code>
+
 <code>edit pastebin</code>
 
 #### Quand l’éditeur s’ouvre, remplace le contenu 
@@ -27,11 +28,13 @@ Easily automate your Bigger/Extreme reactor with a pretty graphical UI. <br />
 ### 2) Installer le script cible (ex. code Pastebin : FurRg6Ec)
 #### Méthode recommandée : le télécharger localement sous le nom `rc`, puis l’exécuter
 <code>pastebin get FurRg6Ec rc</code>
+
 <code>rc</code>
 
 ### 3) Démarrage automatique à chaque boot (startup)
 #### Crée le fichier `startup` qui lance `rc` automatiquement :
 <code>edit startup</code>
+
 #### Colle la ligne suivante, puis Ctrl+S / Ctrl+E :
 <code>shell.run("rc")</code>
 
@@ -45,6 +48,7 @@ Easily automate your Bigger/Extreme reactor with a pretty graphical UI. <br />
 
 ### 6) Vérification rapide que le réacteur est bien vu
 <code>lua</code>
+
 <code>print( peripheral.find("BigReactors-Reactor") and "OK: réacteur détecté" or "KO: aucun réacteur" )</code>
 
 
