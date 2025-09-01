@@ -4,9 +4,9 @@ local version = "1.0"
 
 -- ["filename"] = "pastebinCode"
 local filesToUpdate = {
-    ["/reactorController.lua"] = "b17hfTqe",
-    ["/usr/apis/touchpoint.lua"] = "nx9pkLbJ",
-    ["/update_reactor.lua"] = "w6vVtrLb",
+    ["/reactorController.lua"] = "aW5pLXa7",
+    ["/usr/apis/touchpoint.lua"] = "9cPy9f3S",
+    ["/update_reactor.lua"] = "S4vDXEyb",
 }
 
 local function getPastebinFileContents(filename, pastebinCode)
