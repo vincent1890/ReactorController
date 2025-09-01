@@ -97,6 +97,7 @@ Easily automate your Bigger/Extreme reactor with a pretty graphical UI. <br />
 - External power bank support
   
 ## Update History
+  <b>09/01/2025:</b> Update script because error on Minecraft v1.10.7 - ComputerCraft v0.51 <p>
   <b>05/29/2025:</b> Update future turbine support plans <p>
   <b>12/14/2024:</b> Fix issue with Pastebin API, and some major internal code refactors <p>
   <b>12/04/2023:</b> Changed Control rod insertion logic to use a PID controller <p>
